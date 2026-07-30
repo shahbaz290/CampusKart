@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell or Donate</title>
+    <link rel="stylesheet" href="home.style.css">
+    <link rel="stylesheet" href="sell.style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="">
+            <div>
+                <input class="Search" type="text" placeholder="Search">
+            </div>
+            <div class="navvv">
+                <a href="index.html">Home</a>
+                <a href="sell.html">Sell/Donate</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="form">
+            <h2>Sell or Donate Item</h2>
+            <form action="">
+                <label for="pdt-name">Product Name: </label>
+                <input class="input-box" type="text" id="pdt-name" placeholder="Enter Product Name" required>
+
+
+                <label for="price">Price: </label>
+                <input class="input-box" type="number" id="price" placeholder="Enter price" required>
+
+
+                <label for="seller-name">Seller Name: </label>
+                <input class="input-box" type="text" id="seller-name" placeholder="Enter Seller Name" required>
+
+
+                <label for="contact">Seller Contact: </label>
+                <input class="input-box" type="tel" id="contact" placeholder="Enter Seller Contact" required>
+
+
+                <label for="desc">Description: </label>
+                <textarea name="desc" id="desc" placeholder="Enter the details"></textarea>
+
+                <div>
+                    <label for="img">Upload image: </label>
+                    <input class="input-box" type="file" id="img" required>
+
+                </div>
+                
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

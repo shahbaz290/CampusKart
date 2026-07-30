@@ -1,0 +1,37 @@
+.about{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+    min-height: 80vh;
+}
+.about p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+
+@media (max-width:768px){
+
+    .about{
+        padding: 30px 20px;
+        gap: 20px;
+        min-height: auto;
+    }
+
+    .about h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .about p{
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+        text-align: justify;
+    }
+
+}
