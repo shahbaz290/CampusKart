@@ -31,19 +31,6 @@ navLinks.querySelectorAll("a").forEach((link) => {
     });
 });
 
-// Close menu when clicking outside
-document.addEventListener("click", (event) => {
-    if (
-        !menuToggle.contains(event.target) &&
-        !navLinks.contains(event.target)
-    ) {
-        navLinks.classList.remove("active");
-        menuToggle.textContent = "☰";
-        menuToggle.setAttribute("aria-expanded", "false");
-    }
-});
-
-
 // Current filter values
 let currentSearch = "";
 let currentCategory = "";
