@@ -16,14 +16,22 @@
 
 <body>
     <header>
+
         <nav>
             <a href="index.html">
                 <img src="images/logo.png" alt="CampusKart Logo">
             </a>
-            <div>
+
+            <div class="search-container">
                 <input class="Search" type="text" placeholder="Search">
             </div>
-            <div class="navvv">
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="nav-links">
+                ☰
+            </button>
+
+            <div class="navvv" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="sell.html">Sell/Donate</a>
                 <a href="my-listings.html">My Listings</a>
@@ -31,6 +39,7 @@
                 <a href="login.html">Login</a>
             </div>
         </nav>
+
     </header>
     <section class="hero">
         <div class="hero-text">

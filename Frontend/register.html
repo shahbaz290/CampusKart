@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="home.style.css">
     <link rel="stylesheet" href="register.style.css">
+    <link rel="stylesheet" href="nav.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +26,17 @@
             <a href="index.html">
                 <img src="images/logo.png" alt="CampusKart Logo">
             </a>
-            <div>
+
+            <div class="search-container">
                 <input class="Search" type="text" placeholder="Search">
             </div>
 
-            <div class="navvv">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="nav-links">
+                ☰
+            </button>
+
+            <div class="navvv" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="sell.html">Sell/Donate</a>
                 <a href="my-listings.html">My Listings</a>
@@ -117,5 +124,6 @@
 
     <script src="config.js"></script>
     <script src="register.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
