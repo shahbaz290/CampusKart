@@ -8,29 +8,6 @@ const sortSelect = document.querySelector("#sort");
 const pagination = document.querySelector("#pagination");
 
 
-const menuToggle = document.querySelector("#menu-toggle");
-const navLinks = document.querySelector("#nav-links");
-
-menuToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("active");
-
-    menuToggle.textContent = isOpen ? "✕" : "☰";
-    menuToggle.setAttribute("aria-expanded", isOpen);
-    menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-    );
-});
-
-// Close menu after clicking a navigation link
-navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-        menuToggle.textContent = "☰";
-        menuToggle.setAttribute("aria-expanded", "false");
-    });
-});
-
 // Current filter values
 let currentSearch = "";
 let currentCategory = "";

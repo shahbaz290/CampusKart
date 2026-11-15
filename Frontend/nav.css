@@ -12,6 +12,9 @@
 /* Mobile navigation */
 @media (max-width: 768px) {
 
+    .nav-user {
+        display: none;
+    }
     nav {
         position: relative;
         flex-direction: row !important;

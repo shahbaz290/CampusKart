@@ -1,6 +1,4 @@
 
-/* Profile Container */
-
 .profile-container {
     width: 90%;
     max-width: 1100px;
@@ -18,8 +16,6 @@
     margin-bottom: 35px;
 }
 
-/* Profile Card */
-
 .profile-card {
     max-width: 850px;
     padding: 38px;
@@ -27,8 +23,6 @@
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
-
-/* Profile Header */
 
 .profile-header {
     display: flex;
@@ -44,11 +38,9 @@
     border-radius: 50%;
     background: darkgreen;
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 32px;
     font-weight: 600;
 }
@@ -62,8 +54,6 @@
     color: #666;
     font-size: 14px;
 }
-
-/* Profile Details */
 
 .profile-details {
     display: flex;
@@ -89,8 +79,6 @@
     color: #222;
     overflow-wrap: anywhere;
 }
-
-/* Profile Actions */
 
 .profile-actions {
     display: flex;
@@ -119,13 +107,10 @@
     cursor: not-allowed;
 }
 
-/* Edit Profile Form */
-
 .edit-profile-form {
     margin-top: 30px;
     padding-top: 25px;
     border-top: 1px solid #ddd;
-
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -139,8 +124,6 @@
     font-size: 21px;
     margin-bottom: 5px;
 }
-
-/* Form Fields */
 
 .form-group {
     display: flex;
@@ -168,8 +151,6 @@
     border-color: darkgreen;
     box-shadow: 0 0 0 2px rgba(0, 100, 0, 0.1);
 }
-
-/* Edit Form Buttons */
 
 .edit-actions {
     display: flex;
@@ -203,54 +184,6 @@
     background: #555;
 }
 
-/* Responsive Design */
-
-@media (max-width: 600px) {
-
-    .profile-container {
-        width: 92%;
-        margin: 30px auto;
-    }
-
-    .profile-container h1 {
-        font-size: 28px;
-    }
-
-    .profile-subtitle {
-        font-size: 15px;
-    }
-
-    .profile-card {
-        padding: 22px 18px;
-    }
-
-    .profile-header {
-        gap: 15px;
-    }
-
-    .profile-avatar {
-        width: 65px;
-        height: 65px;
-        min-width: 65px;
-        font-size: 26px;
-    }
-
-    .profile-user-info h2 {
-        font-size: 21px;
-    }
-
-    .profile-actions {
-        flex-direction: column;
-    }
-
-    .profile-actions button {
-        width: 100%;
-    }
-
-    .edit-actions button {
-        flex: 1;
-    }
-}
 nav a img {
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -275,9 +208,137 @@ nav a img:hover {
     border-radius: 6px;
     font-size: 15px;
     outline: none;
+    box-sizing: border-box;
 }
 
 #edit-whatsapp:focus {
     border-color: #25D366;
     box-shadow: 0 0 4px rgba(37, 211, 102, 0.25);
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .profile-container h1 {
+        font-size: 28px;
+    }
+
+    .profile-subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .profile-card {
+        width: 100%;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .profile-header {
+        gap: 15px;
+        margin-bottom: 28px;
+    }
+
+    .profile-avatar {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+        font-size: 26px;
+    }
+
+    .profile-user-info {
+        min-width: 0;
+    }
+
+    .profile-user-info h2 {
+        font-size: 21px;
+        overflow-wrap: anywhere;
+    }
+
+    .profile-user-info p {
+        overflow-wrap: anywhere;
+    }
+
+    .profile-details {
+        gap: 18px;
+    }
+
+    .profile-field {
+        padding-bottom: 12px;
+    }
+
+    .profile-field p {
+        font-size: 15px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .profile-actions button {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .edit-profile-form {
+        margin-top: 25px;
+        padding-top: 20px;
+        gap: 14px;
+    }
+
+    .edit-profile-form h3 {
+        font-size: 19px;
+    }
+
+    .form-group input,
+    #edit-whatsapp {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .edit-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .edit-actions button {
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .profile-container h1 {
+        font-size: 25px;
+    }
+
+    .profile-card {
+        padding: 20px 15px;
+    }
+
+    .profile-avatar {
+        width: 58px;
+        height: 58px;
+        min-width: 58px;
+        font-size: 23px;
+    }
+
+    .profile-user-info h2 {
+        font-size: 19px;
+    }
+
+    .profile-field p {
+        font-size: 14px;
+    }
 }

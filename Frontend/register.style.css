@@ -1,5 +1,4 @@
 
-/* Registration container */
 .register-container {
     padding: 40px 20px;
 }
@@ -10,30 +9,26 @@
     margin: 30px auto;
     padding: 35px 40px;
     box-sizing: border-box;
-
     display: flex;
     flex-direction: column;
-
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* Heading */
 .register h2 {
     text-align: center;
     font-size: 27px;
     margin: 0 0 8px;
 }
 
-/* Subtitle */
 .register-subtitle {
     text-align: center;
     color: #666;
     font-size: 14px;
     margin: 0 0 25px;
+    line-height: 1.6;
 }
 
-/* Form */
 .register form {
     display: flex;
     flex-direction: column;
@@ -45,13 +40,11 @@
     margin-top: 4px;
 }
 
-/* Input fields */
 .register .input-box {
     width: 100%;
     box-sizing: border-box;
     font-size: 15px;
     padding: 11px 12px;
-
     border: 1px solid #aaa;
     border-radius: 6px;
     outline: none;
@@ -61,17 +54,13 @@
     border-color: darkgreen;
 }
 
-/* Register button */
 .register button {
     margin-top: 18px;
     padding: 12px;
-
     border: none;
     border-radius: 8px;
-
     background: darkgreen;
     color: white;
-
     font-size: 16px;
     cursor: pointer;
 }
@@ -80,7 +69,6 @@
     background: #006400;
 }
 
-/* Login link */
 .register .login-link {
     text-align: center;
     margin: 25px 0 0;
@@ -97,9 +85,16 @@
     text-decoration: underline;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+nav a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
 
+nav a img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
     .register-container {
         padding: 20px 15px;
     }
@@ -115,15 +110,54 @@
         font-size: 24px;
     }
 
+    .register-subtitle {
+        font-size: 14px;
+        margin-bottom: 22px;
+    }
+
     .register form {
         gap: 12px;
     }
-}
-nav a img {
-    cursor: pointer;
-    transition: transform 0.2s ease;
+
+    .register label {
+        font-size: 14px;
+    }
+
+    .register .input-box {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .register button {
+        min-height: 44px;
+    }
+
+    .register .login-link {
+        margin-top: 22px;
+        line-height: 1.6;
+    }
 }
 
-nav a img:hover {
-    transform: scale(1.05);
+@media (max-width: 400px) {
+    .register-container {
+        padding: 15px 12px;
+    }
+
+    .register {
+        max-width: 100%;
+        margin: 15px auto;
+        padding: 26px 19px;
+    }
+
+    .register h2 {
+        font-size: 22px;
+    }
+
+    .register-subtitle {
+        font-size: 13px;
+    }
+
+    .register .input-box {
+        padding: 11px;
+    }
 }

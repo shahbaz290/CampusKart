@@ -122,6 +122,15 @@
     font-size: 16px;
 }
 
+nav a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+nav a img:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 900px) {
     .my-listings {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -134,19 +143,82 @@
         margin: 30px auto;
     }
 
-    .my-listings {
-        grid-template-columns: 1fr;
+    .page-heading {
+        margin-bottom: 22px;
     }
 
     .page-heading h1 {
         font-size: 25px;
     }
-}
-nav a img {
-    cursor: pointer;
-    transition: transform 0.2s ease;
+
+    .page-heading p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .my-listings {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .listing-card {
+        border-radius: 12px;
+    }
+
+    .listing-card img {
+        height: 220px;
+    }
+
+    .listing-info {
+        padding: 16px;
+    }
+
+    .listing-info h3 {
+        font-size: 18px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .listing-price {
+        font-size: 16px;
+    }
+
+    .listing-meta {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .listing-actions {
+        gap: 8px;
+    }
+
+    .listing-actions button {
+        min-height: 42px;
+        padding: 10px 8px;
+        font-size: 13px;
+    }
 }
 
-nav a img:hover {
-    transform: scale(1.05);
+@media (max-width: 400px) {
+    .my-listings-container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    .listing-card img {
+        height: 190px;
+    }
+
+    .listing-info {
+        padding: 14px;
+    }
+
+    .listing-actions {
+        flex-direction: column;
+    }
+
+    .listing-actions button {
+        width: 100%;
+        min-height: 42px;
+    }
 }
