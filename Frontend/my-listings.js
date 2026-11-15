@@ -13,7 +13,7 @@ if (!accessToken) {
 async function fetchMyListings() {
     try {
         const response = await fetch(
-            "http://localhost:8000/api/v1/listings/my-listings",
+            `${API_BASE_URL}/api/v1/listings/my-listings`,
             {
                 headers: {
                     Authorization: `Bearer ${accessToken}`
@@ -160,7 +160,7 @@ myListings.addEventListener("click", async (event) => {
             if (!confirmed) return;
 
             response = await fetch(
-                `http://localhost:8000/api/v1/listings/${id}/status`,
+                `${API_BASE_URL}/api/v1/listings/${id}/status`,
                 {
                     method: "PATCH",
                     headers: {
@@ -181,7 +181,7 @@ myListings.addEventListener("click", async (event) => {
             if (!confirmed) return;
 
             response = await fetch(
-                `http://localhost:8000/api/v1/listings/delete/${id}`,
+                `${API_BASE_URL}/api/v1/listings/delete/${id}`,
                 {
                     method: "DELETE",
                     headers: {

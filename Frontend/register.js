@@ -30,7 +30,7 @@ registerForm.addEventListener("submit", async (event) => {
     try {
 
         const response = await fetch(
-            "http://localhost:8000/api/v1/users/register",
+            `${API_BASE_URL}/api/v1/users/register`,
             {
                 method: "POST",
                 headers: {

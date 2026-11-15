@@ -32,9 +32,9 @@ function displayProfile(user) {
     document.querySelector("#profile-avatar").textContent =
         user.name.charAt(0).toUpperCase();
     document.querySelector("#whatsapp-number").textContent =
-    user.whatsappNumber
-        ? "+" + user.whatsappNumber
-        : "Not added";
+        user.whatsappNumber
+            ? "+" + user.whatsappNumber
+            : "Not added";
 }
 
 
@@ -42,7 +42,7 @@ function displayProfile(user) {
 async function fetchProfile() {
     try {
         const response = await fetch(
-            "http://localhost:8000/api/v1/users/profile",
+            `${API_BASE_URL}/api/v1/users/profile`,
             {
                 headers: {
                     Authorization: `Bearer ${accessToken}`
@@ -78,7 +78,8 @@ editButton.addEventListener("click", () => {
 
     editName.value = currentUser.name;
     editUsername.value = currentUser.username;
-    editWhatsapp.value = currentUser.whatsappNumber || "";
+    editWhatsapp.value =
+        currentUser.whatsappNumber?.replace(/^91/, "") || "";
 
     editForm.hidden = false;
 
@@ -113,7 +114,7 @@ editForm.addEventListener("submit", async (event) => {
 
     try {
         const response = await fetch(
-            "http://localhost:8000/api/v1/users/update-profile",
+            `${API_BASE_URL}/api/v1/users/update-profile`,
             {
                 method: "PATCH",
                 headers: {

@@ -19,7 +19,7 @@ async function fetchProduct() {
         }
 
         const response = await fetch(
-            `http://localhost:8000/api/v1/listings/${id}`
+            `${API_BASE_URL}/api/v1/listings/${id}`
         );
 
         if (!response.ok) {

@@ -56,7 +56,7 @@ async function fetchListings() {
         params.append("limit", limit);
 
         const response = await fetch(
-            `http://localhost:8000/api/v1/listings?${params.toString()}`
+            `${API_BASE_URL}/api/v1/listings?${params.toString()}`
         );
 
         if (!response.ok) {
