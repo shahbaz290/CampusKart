@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell or Donate</title>
+    <link rel="stylesheet" href="home.style.css">
+    <link rel="stylesheet" href="sell.style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="CampusKart Logo">
+            </a>
+            <div>
+                <input class="Search" type="text" placeholder="Search">
+            </div>
+            <div class="navvv">
+                <a href="index.html">Home</a>
+                <a href="sell.html">Sell/Donate</a>
+                <a href="my-listings.html">My Listings</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="form">
+            <h2>Sell or Donate Item</h2>
+
+            <form id="sell-form">
+                <label for="pdt-name">Product Name:</label>
+                <input class="input-box" type="text" id="pdt-name" name="title" placeholder="Enter Product Name"
+                    required>
+
+                <label for="type">Listing Type:</label>
+                <select class="input-box" id="type" name="type" required>
+                    <option value="">Select Type</option>
+                    <option value="sell">Sell</option>
+                    <option value="donate">Donate</option>
+                </select>
+
+                <label for="price">Price (₹):</label>
+                <input class="input-box" type="number" id="price" name="price" min="0" placeholder="Enter price">
+
+                <label for="category">Category:</label>
+                <input class="input-box" type="text" id="category" name="category" placeholder="e.g. Electronics, Books"
+                    required>
+
+                <label for="condition">Condition:</label>
+                <select class="input-box" id="condition" name="condition" required>
+                    <option value="">Select Condition</option>
+                    <option value="new">New</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <label for="desc">Description:</label>
+                <textarea id="desc" name="description" placeholder="Enter the details" required></textarea>
+
+                <label for="img">Upload Images (maximum 5):</label>
+                <input class="input-box" type="file" id="img" name="images" accept="image/*" multiple>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </section>
+    <script src="sell.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

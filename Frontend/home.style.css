@@ -1,3 +1,12 @@
+.nav-user {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    color: darkgreen;
+}
+#items {
+    scroll-margin-top: 30px;
+}
 *{
     font-family: 'Poppins',sans-serif;
     padding: 0;
@@ -255,4 +264,134 @@ footer{
     padding:40px 25px;
 }
 
+}
+
+
+
+
+
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.filter-btn {
+    padding: 9px 20px;
+    border: 1px solid darkgreen;
+    border-radius: 25px;
+    background: white;
+    color: darkgreen;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: darkgreen;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .category-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+
+
+.sorting {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.sorting label {
+    font-size: 14px;
+    color: #444;
+}
+
+.sorting select {
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.sorting select:focus {
+    border-color: darkgreen;
+}
+
+@media (max-width: 600px) {
+    .sorting {
+        justify-content: center;
+    }
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 35px 0;
+}
+
+.pagination button {
+    padding: 9px 16px;
+    border: 1px solid darkgreen;
+    border-radius: 6px;
+    background: white;
+    color: darkgreen;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled),
+.pagination button.active {
+    background: darkgreen;
+    color: white;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 480px) {
+    .pagination {
+        gap: 6px;
+    }
+
+    .pagination button {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+}
+
+nav a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+nav a img:hover {
+    transform: scale(1.05);
 }

@@ -1,0 +1,216 @@
+
+/* About Page */
+
+.about-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+
+.about-hero {
+    text-align: center;
+    padding: 65px 20px;
+    background: #f1f7f1;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.about-hero h1 {
+    font-size: 38px;
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Main Content */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 50px 10px;
+}
+
+.about-section h2 {
+    font-size: 25px;
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* Features */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 22px;
+}
+
+.feature {
+    padding: 25px;
+    background: #f7f9f7;
+    border: 1px solid #e5eae5;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature h3 {
+    color: darkgreen;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Closing Section */
+
+.about-closing {
+    text-align: center;
+    background: #f1f7f1;
+    padding: 45px 20px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.about-closing h2 {
+    font-size: 26px;
+    color: darkgreen;
+    margin-bottom: 12px;
+}
+
+.about-closing p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.explore-btn:hover {
+    background: #004d00;
+}
+
+/* Footer Copyright */
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 15px 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .about-container {
+        width: 92%;
+    }
+
+    .about-hero {
+        padding: 45px 18px;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+    .about-content {
+        padding: 35px 5px;
+        gap: 28px;
+    }
+
+    .about-section h2 {
+        font-size: 22px;
+    }
+
+    .about-section p {
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 0;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .feature {
+        padding: 20px;
+    }
+
+    .about-closing {
+        padding: 35px 18px;
+    }
+
+    .about-closing h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-hero h1 {
+        font-size: 26px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .about-closing h2 {
+        font-size: 20px;
+    }
+}
+nav a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+nav a img:hover {
+    transform: scale(1.05);
+}

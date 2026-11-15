@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin-bottom: 35px;
+}
+
+.pdt {
+    max-width: 1300px;
+    margin: 55px auto;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.pdt-img {
+    width: 45%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fa;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.pdt-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pdt-details {
+    width: 55%;
+    min-height: 460px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.pdt-details h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.pdt-details p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.pdt-details .pdt-price {
+    font-size: 25px;
+    font-weight: 600;
+    color: #16803c;
+    margin-bottom: 22px;
+}
+
+.pdt-details .pdt-seller-name,
+.pdt-details .pdt-seller-contact {
+    font-size: 17px;
+    color: #555;
+}
+
+.pdt-details .pdt-desc {
+    margin-top: 5px;
+    color: #333;
+}
+
+nav a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+nav a img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin-bottom: 20px;
+    }
+
+    .pdt {
+        flex-direction: column;
+        gap: 20px;
+        margin: 25px auto;
+        padding: 0 18px;
+    }
+
+    .pdt-img {
+        width: 100%;
+        max-width: 450px;
+        height: 320px;
+        padding: 15px;
+    }
+
+    .pdt-details {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .pdt-details h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .pdt-details .pdt-price {
+        font-size: 22px;
+    }
+
+    .pdt-details p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pdt-img {
+        height: 260px;
+    }
+
+    .pdt-details {
+        padding: 20px;
+    }
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1da851;
+}

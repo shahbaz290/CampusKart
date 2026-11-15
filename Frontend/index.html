@@ -17,13 +17,16 @@
 <body>
     <header>
         <nav>
-            <img src="images/logo.png" alt="">
+            <a href="index.html">
+                <img src="images/logo.png" alt="CampusKart Logo">
+            </a>
             <div>
                 <input class="Search" type="text" placeholder="Search">
             </div>
             <div class="navvv">
                 <a href="index.html">Home</a>
                 <a href="sell.html">Sell/Donate</a>
+                <a href="my-listings.html">My Listings</a>
                 <a href="about.html">About</a>
                 <a href="login.html">Login</a>
             </div>
@@ -40,48 +43,37 @@
             <button class="sell">Sell or Donate</button>
         </div>
     </section>
+
     <section class="featured">
         <h2>Featured Listings</h2>
         <p>Browse the latest products posted by students.</p>
+
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="">All</button>
+            <button class="filter-btn" data-category="Electronics">Electronics</button>
+            <button class="filter-btn" data-category="Book">Books</button>
+            <button class="filter-btn" data-category="Stationery">Stationery</button>
+            <button class="filter-btn" data-category="Notes">Notes</button>
+            <button class="filter-btn" data-category="Others">Others</button>
+        </div>
+
+
+        <div class="sorting">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="newest">Newest First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+
+
     </section>
-    <section class="items">
-        <div class="cards">
-            <img src="images/calci.png" alt="">
-            <h4>Scientific Calculator</h4>
-            <p>Price: ₹299</p>
-            <button class="view-details" data-id="1" >View Details</button>
-        </div>
-        <div class="cards">
-            <img src="images/drafter.jpg" alt="">
-            <h4>Drafter</h4>
-            <p>Price: ₹99</p>
-            <button class="view-details" data-id="2">View Details</button>
-        </div>
-        <div class="cards">
-            <img src="images/labcoat.png" alt="">
-            <h4>Lab Coat</h4>
-            <p>Price: ₹99</p>
-            <button class="view-details" data-id="3">View Details</button>
-        </div>
-        <div class="cards">
-            <img src="images/book1.jpg" alt="">
-            <h4>C Programming Book</h4>
-            <p>Price: ₹199</p>
-            <button class="view-details" data-id="4">View Details</button>
-        </div>
-        <div class="cards">
-            <img src="images/book2.webp" alt="">
-            <h4>Engineering Graphics Book</h4>
-            <p>Price: ₹199</p>
-            <button class="view-details" data-id="5">View Details</button>
-        </div>
-        <div class="cards">
-            <img src="images/holder.jpg" alt="">
-            <h4>Sheet Holder</h4>
-            <p>Price: ₹49</p>
-            <button class="view-details" data-id="6">View Details</button>
-        </div>
+
+    <section class="items" id="items">
+        <p>Loading listings...</p>
     </section>
+    <div class="pagination" id="pagination"></div>
     <footer>
         <div class="footer">
             <div class="footer-about">
@@ -96,6 +88,7 @@
                 <a href="sell.html">Sell / Donate</a>
                 <a href="about.html">About</a>
                 <a href="login.html">Login</a>
+                <a href="my-listings.html">My Listings</a>
             </div>
         </div>
         <p style="text-align: center; margin-top: 30px;">
@@ -103,6 +96,7 @@
         </p>
     </footer>
     <script src="app.js"></script>
+    <script src="auth.js"></script>
 </body>
 
 </html>

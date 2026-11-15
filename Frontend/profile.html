@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | CampusKart</title>
+
+    <link rel="stylesheet" href="home.style.css">
+    <link rel="stylesheet" href="profile.style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="CampusKart Logo">
+            </a>
+
+            <div>
+                <input class="Search" type="text" placeholder="Search">
+            </div>
+
+            <div class="navvv">
+                <a href="index.html">Home</a>
+                <a href="sell.html">Sell/Donate</a>
+                <a href="my-listings.html">My Listings</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <main class="profile-container">
+
+        <h1>My Profile</h1>
+        <p class="profile-subtitle">
+            View and manage your account information.
+        </p>
+
+        <section class="profile-card">
+
+            <!-- Profile Header -->
+            <div class="profile-header">
+
+                <div class="profile-avatar" id="profile-avatar">
+                    U
+                </div>
+
+                <div class="profile-user-info">
+                    <h2 id="profile-name">Loading...</h2>
+                    <p id="profile-username"></p>
+                </div>
+
+            </div>
+
+            <!-- Profile Details -->
+            <div class="profile-details">
+
+                <div class="profile-field">
+                    <label>Full Name</label>
+                    <p id="name">Loading...</p>
+                </div>
+
+                <div class="profile-field">
+                    <label>Username</label>
+                    <p id="username">Loading...</p>
+                </div>
+
+                <div class="profile-field">
+                    <label>Email Address</label>
+                    <p id="email">Loading...</p>
+                </div>
+                <div class="profile-field">
+                    <label>WhatsApp Number</label>
+                    <p id="whatsapp-number">Loading...</p>
+                </div>
+
+            </div>
+
+            <!-- Profile Actions -->
+            <div class="profile-actions">
+
+                <button type="button" id="edit-profile">
+                    Edit Profile
+                </button>
+
+                <button type="button" id="change-password" disabled>
+                    Change Password
+                </button>
+
+            </div>
+
+            <!-- Edit Profile Form -->
+            <form id="edit-profile-form" class="edit-profile-form" hidden>
+
+                <h3>Edit Your Profile</h3>
+
+                <div class="form-group">
+                    <label for="edit-name">Full Name</label>
+                    <input type="text" id="edit-name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-username">Username</label>
+                    <input type="text" id="edit-username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-whatsapp">WhatsApp Number</label>
+                    <input type="tel" id="edit-whatsapp" placeholder="Enter 10-digit mobile number" maxlength="10">
+                    <p class="whatsapp-note">
+                        Your number will be shared with buyers so they can contact you.
+                    </p>
+                </div>
+
+                <div class="edit-actions">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                    <button type="button" id="cancel-edit" class="cancel-btn">Cancel</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="profile.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

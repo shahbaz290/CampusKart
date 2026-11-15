@@ -1,0 +1,283 @@
+
+/* Profile Container */
+
+.profile-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.profile-container h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.profile-subtitle {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* Profile Card */
+
+.profile-card {
+    max-width: 850px;
+    padding: 38px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Header */
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 38px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    background: darkgreen;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.profile-user-info h2 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.profile-user-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Profile Details */
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.profile-field {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-field label {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.profile-field p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    overflow-wrap: anywhere;
+}
+
+/* Profile Actions */
+
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-actions button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    background: darkgreen;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile-actions button:hover:not(:disabled) {
+    background: #004d00;
+}
+
+.profile-actions button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* Edit Profile Form */
+
+.edit-profile-form {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.edit-profile-form[hidden] {
+    display: none;
+}
+
+.edit-profile-form h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+/* Form Fields */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: darkgreen;
+    box-shadow: 0 0 0 2px rgba(0, 100, 0, 0.1);
+}
+
+/* Edit Form Buttons */
+
+.edit-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.edit-actions button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: darkgreen;
+}
+
+.save-btn:hover {
+    background: #004d00;
+}
+
+.cancel-btn {
+    background: #777;
+}
+
+.cancel-btn:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .profile-container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .profile-container h1 {
+        font-size: 28px;
+    }
+
+    .profile-subtitle {
+        font-size: 15px;
+    }
+
+    .profile-card {
+        padding: 22px 18px;
+    }
+
+    .profile-header {
+        gap: 15px;
+    }
+
+    .profile-avatar {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+        font-size: 26px;
+    }
+
+    .profile-user-info h2 {
+        font-size: 21px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions button {
+        width: 100%;
+    }
+
+    .edit-actions button {
+        flex: 1;
+    }
+}
+nav a img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+nav a img:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#edit-whatsapp {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+#edit-whatsapp:focus {
+    border-color: #25D366;
+    box-shadow: 0 0 4px rgba(37, 211, 102, 0.25);
+}

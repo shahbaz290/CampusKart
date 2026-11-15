@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CampusKart</title>
+
+    <link rel="stylesheet" href="home.style.css">
+    <link rel="stylesheet" href="register.style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="CampusKart Logo">
+            </a>
+            <div>
+                <input class="Search" type="text" placeholder="Search">
+            </div>
+
+            <div class="navvv">
+                <a href="index.html">Home</a>
+                <a href="sell.html">Sell/Donate</a>
+                <a href="my-listings.html">My Listings</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <main class="register-container">
+
+        <div class="register">
+
+            <h2>Create Account</h2>
+
+            <p class="register-subtitle">
+                Join CampusKart and connect with your campus community.
+            </p>
+
+            <form id="register-form">
+
+                <label for="name">Full Name</label>
+                <input
+                    class="input-box"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="username">Username</label>
+                <input
+                    class="input-box"
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Choose a username"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    class="input-box"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    class="input-box"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                    class="input-box"
+                    type="password"
+                    id="confirm-password"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                    required
+                >
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="register.js"></script>
+</body>
+</html>
